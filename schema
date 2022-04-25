@@ -1,0 +1,9 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "GameScript.js schema",
+  "description": ".JSON Schema for GameScript.js",
+  "type": "object",
+	"properties": {
+	}
+}
