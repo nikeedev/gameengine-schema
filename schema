@@ -10,8 +10,22 @@
 			"type": "string"
 		},
 		"type": {
-			"description": "Type of GameScript.js Object"
+			"description": "Type of GameScript.js Object",
+			"type": "string"
+		},
+		"position": {
+			"description": "Position of GameScript.js Object",
+			"type": "object"
+		},
+		"size": {
+			"description": "Size of GameScript.js Object",
+			"type": "object"
+		},
+		"src": {
+			"description": "Source of a picture of GameScript.js Object",
+			"type": "string"
 		}
-	}
+	},
+	"required": ["name", "type", "position"]
 	// cool!
 }
