@@ -1,29 +1,50 @@
 {
 	"$schema": "http://json-schema.org/schema",
-	"$id": "https://raw.githubusercontent.com/nikeedev/gamescript-schema/main/schema",
-	"title": "GameScript.js schema",
-	"description": ".JSON Schema for GameScript.js",
+	"$id": "https://raw.githubusercontent.com/nikeedev/gameEngine-schema/main/schema",
+	"title": "GameEngine.js schema",
+	"description": ".JSON Schema for GameEngine.js",
 	"type": "object",
 	"properties": {
 		"name": {
 			"description": "Name of the GameEngine.js Object",
-			"type": "string"
+			"type": "string",
+			"maxItems": 1
 		},
 		"type": {
-			"description": "Type of GameScript.js Object",
-			"type": "string"
+			"description": "Type of GameEngine.js Object",
+			"type": "string",
+			"maxItems": 1
 		},
 		"position": {
-			"description": "Position of GameScript.js Object",
-			"type": "object"
+			"description": "Position of GameEngine.js Object",
+			"type": "object",
+			"maxItems": 1,
+			"properties": {
+				"x": {
+					"type":"number"
+				},
+				"y": {
+					"type":"number"
+				}
+			}
 		},
 		"size": {
-			"description": "Size of GameScript.js Object",
-			"type": "object"
+			"description": "Size of GameEngine.js Object",
+			"type": "object",
+			"maxItems": 1,
+			"properties": {
+				"width": {
+					"type":"number"
+				},
+				"height": {
+					"type":"number"
+				}
+			}
 		},
 		"src": {
-			"description": "Source of a picture of GameScript.js Object",
-			"type": "string"
+			"description": "Source of a picture of GameEngine.js Object",
+			"type": "string",
+			"maxItems": 1
 		}
 	},
 	"required": ["name", "type", "position"]
